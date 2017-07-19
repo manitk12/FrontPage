@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/blue"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+           >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_proged_teacher_female_greenboard_128dp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#121212"
+        android:textSize="16sp"
+        android:text="Select Class"
+        />
+
+
+
+    <TextView
+        android:id="@+id/teaching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:text="That You Are Teaching Right Know!"
+        />
+
+    <view
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:layout_margin="30dp"
+        android:layout_height="4dp">
+
+    </view>
+
+
+</LinearLayout>
