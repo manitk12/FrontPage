@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView studentCardView ,teacherCardview ,parentcardView;
+    private CardView studentCardView, teacherCardView, parentCardView;
 
-    private TextView student ,teacher ,parent;
+    private TextView studentTextView, teacherTextView, parentTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,20 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         studentCardView = (CardView) findViewById(R.id.cardStudent);
-        teacherCardview = (CardView) findViewById(R.id.cardTeacher);
-        parentcardView = (CardView) findViewById(R.id.cardParent);
+        teacherCardView = (CardView) findViewById(R.id.cardTeacher);
+        parentCardView = (CardView) findViewById(R.id.cardParent);
 
-        student =(TextView) findViewById(R.id.student1);
-        teacher =(TextView) findViewById(R.id.teacher1);
-        parent =(TextView) findViewById(R.id.parent1);
+        studentTextView =(TextView) findViewById(R.id.student_textview);
+        teacherTextView =(TextView) findViewById(R.id.teacher_textview);
+        parentTextView =(TextView) findViewById(R.id.parent_textview);
 
 
-        student.setOnClickListener(new View.OnClickListener() {
+        studentTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 studentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                parentcardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
         });
@@ -42,52 +42,52 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 studentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                parentcardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
         });
 
-        teacher.setOnClickListener(new View.OnClickListener() {
+        teacherTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#FF4081"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                parentcardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
         });
 
 
-        teacherCardview.setOnClickListener(new View.OnClickListener() {
+        teacherCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#FF4081"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                parentcardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
         });
 
 
-        parent.setOnClickListener(new View.OnClickListener() {
+        parentTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                parentcardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
         });
 
 
-        parentcardView.setOnClickListener(new View.OnClickListener() {
+        parentCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                parentcardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
-                teacherCardview.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
 
             }
