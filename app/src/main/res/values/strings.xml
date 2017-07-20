@@ -3,4 +3,17 @@
 
     <string name="user">User_ID</string>
     <string name="hint">Password</string>
+
+
+    <string-array name="classes">
+        <item>VI</item>
+        <item>VII</item>
+    </string-array>
+
+
+    <string-array name="subject">
+        <item>Science</item>
+        <item>Physics</item>
+        <item>Math</item>
+    </string-array>
 </resources>
