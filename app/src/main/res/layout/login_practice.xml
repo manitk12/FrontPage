@@ -1,59 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/yellow"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:gravity="center">
 
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@drawable/xml_white_bg"
-         >
+        android:orientation="horizontal"
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
+        >
 
 
-    >
+        <RelativeLayout
 
-
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-
-            android:src="@drawable/ic_proged_user_1797c8_18dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="2dp"
-            android:layout_gravity="center"
-             />
-
-
-
-
-
-        <View
-            android:layout_width="2dp"
             android:layout_height="wrap_content"
-            android:background="#2896ba"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_alignTop="@+id/icon"
-            android:layout_alignBottom="@+id/icon"
-            android:layout_toEndOf="@+id/icon"
             android:layout_gravity="center"
-            />
+            >
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_proged_user_1797c8_18dp"
+
+                />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user"
+                android:layout_alignBottom="@+id/user"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/user"
+                android:background="#121212"
+                >
 
 
-</RelativeLayout>
+            </View>
+
+
+        </RelativeLayout>
+
 
         <EditText
             android:layout_width="150dp"
@@ -62,52 +60,51 @@
             android:background="#00000000"
             />
 
-
-
     </LinearLayout>
+
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
         android:background="@drawable/xml_white_bg"
-        >
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
 
+        >
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/icon1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_proged_password_1797c8_18dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="2dp"
             android:layout_gravity="center"
-            />
+            >
+
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_proged_user_1797c8_18dp"
+
+                />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pass"
+                android:layout_alignBottom="@+id/pass"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/pass"
+                android:background="#121212"
+                >
 
 
-        <View
-            android:layout_width="2dp"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/icon1"
-            android:layout_alignTop="@+id/icon1"
-            android:layout_alignBottom="@+id/icon1"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="#2896ba"
-            android:layout_gravity="center"
-            />
-
+            </View>
 
 
         </RelativeLayout>
-
 
 
         <EditText
@@ -117,37 +114,33 @@
             android:background="#00000000"
             />
 
-
-
     </LinearLayout>
-
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         >
 
-
         <TextView
-            android:id="@+id/forget"
+            android:id="@+id/forget1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Forget Password ?"
             android:textColor="@color/white"
-            android:text="Forget Password?"
-            android:layout_marginTop="15dp"
-
             />
-
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
-            android:layout_below="@id/forget"
+            android:layout_marginTop="2dp"
+            android:layout_alignStart="@+id/forget1"
+            android:layout_alignEnd="@+id/forget1"
+            android:layout_below="@+id/forget1"
             android:background="@color/white"
-            android:layout_alignStart="@id/forget"
-            android:layout_alignEnd="@id/forget"
-            />
+            >
 
+        </View>
 
 
     </RelativeLayout>
@@ -176,5 +169,6 @@
         </TextView>
 
     </android.support.v7.widget.CardView>
+
 
 </LinearLayout>
