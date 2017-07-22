@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93f77d"
+    android:background="#66bb68"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context="com.grademojo.frontpage.MainActivity">
@@ -26,6 +26,7 @@
         android:textColor="#ffffff"
         android:text="Login"
         android:textStyle="bold"
+        android:textColorHint="#66bb68"
         android:layout_marginBottom="20dp"
         />
 

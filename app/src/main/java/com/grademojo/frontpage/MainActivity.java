@@ -5,9 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 public class MainActivity extends AppCompatActivity {
+
+    Boolean animation;
 
     private CardView studentCardView, teacherCardView, parentCardView;
 
@@ -26,15 +32,25 @@ public class MainActivity extends AppCompatActivity {
         teacherTextView =(TextView) findViewById(R.id.teacher_textview);
         parentTextView =(TextView) findViewById(R.id.parent_textview);
 
+        animation = false ;
+
+
+
 
 
 
         View.OnClickListener studentListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 studentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                YoYo.with(Techniques.RollIn).duration(1000).playOn(studentCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(teacherCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(parentCardView);
+
+
             }
         };
 
@@ -49,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                teacherCardView.setRadius(1.5f);
 
             }
         };
@@ -65,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 parentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+                parentCardView.setRadius(1.5f);
 
             }
         };
