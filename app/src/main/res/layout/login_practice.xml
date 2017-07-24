@@ -160,10 +160,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:padding="15dp"
-            android:text="LOGIN"
-            android:layout_marginStart="5dp"
-            android:gravity="center"
+            android:text="login"
+            android:textAllCaps="true"
+            android:layout_marginStart="6dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
             >
 
         </TextView>
