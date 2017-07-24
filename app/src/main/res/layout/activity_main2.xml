@@ -8,54 +8,62 @@
     android:layout_height="match_parent">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:orientation="horizontal"
+        android:gravity="center"
 
         >
 
+        <ImageView
+            android:id="@+id/grade"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/grage"
 
-
-    <ImageView
-        android:id="@+id/grade"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/grage"
-        android:layout_marginStart="40dp"
-        android:layout_alignTop="@+id/grade_mojo"
-        android:layout_alignParentStart="true"
-         />
-
-
-
-        <TextView
-            android:id="@+id/grade_mojo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="grade mojo"
-            android:textSize="30dp"
-            android:textAllCaps="true"
-            android:layout_toEndOf="@+id/grade"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="15dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
              />
 
-        <TextView
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:gravity="start"
-            android:layout_toEndOf="@+id/grade"
-            android:layout_marginStart="25dp"
-            android:layout_below="@+id/grade_mojo"
-            android:text="The Classroom Assistant"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
 
-            />
-    </RelativeLayout>
+
+            >
+
+            <TextView
+                android:id="@+id/grade_mojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="grade mojo"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:layout_marginStart="15dp"
+                android:text="The Classroom Assistant"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -64,13 +72,13 @@
         android:orientation="horizontal"
         android:layout_marginTop="60dp"
         android:background="@drawable/xml_white_bg"
+        android:gravity="center_vertical"
          >
 
         <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        >
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
 
 
             <ImageView
@@ -80,7 +88,6 @@
                 android:src="@drawable/ic_proged_user_1797c8_18dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="2dp"
-                android:layout_gravity="center"
                  />
 
 
@@ -96,7 +103,6 @@
                 android:layout_alignTop="@+id/icon"
                 android:layout_alignBottom="@+id/icon"
                 android:layout_toEndOf="@+id/icon"
-                android:layout_gravity="center"
                 />
 
 
@@ -106,8 +112,7 @@
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:hint="@string/user"
-            android:textSize="16dp"
-
+            android:textSize="16sp"
             android:textColorHint="#b1b0b0"
             android:background="#00000000"
             />
@@ -123,12 +128,13 @@
         android:orientation="horizontal"
         android:background="@drawable/xml_white_bg"
         android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
         >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+
 
 
             >
@@ -141,10 +147,8 @@
                 android:src="@drawable/ic_proged_password_1797c8_18dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="2dp"
-                android:layout_gravity="center"
+
                 />
-
-
 
 
 
@@ -157,7 +161,7 @@
                 android:layout_alignTop="@+id/pass"
                 android:layout_alignBottom="@+id/pass"
                 android:layout_toEndOf="@+id/pass"
-                android:layout_gravity="center"
+
                 />
 
 
@@ -167,8 +171,7 @@
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:hint="@string/hint"
-            android:textSize="16dp"
-
+            android:textSize="16sp"
             android:textColorHint="#b1b0b0"
             android:background="#00000000"
             />
@@ -183,6 +186,8 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         >
 
 
@@ -192,7 +197,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="Forget Password?"
-            android:layout_marginTop="15dp"
 
             />
 
@@ -204,7 +208,6 @@
             android:background="@color/white"
             android:layout_alignStart="@id/forget"
             android:layout_alignEnd="@id/forget"
-            android:layout_marginBottom="10dp"
             />
 
 
@@ -216,11 +219,9 @@
         android:id="@+id/cardStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="2dp"
         android:layout_margin="10dp"
-
         app:cardElevation="10dp"
-
         app:cardBackgroundColor="@color/blue"
         >
 
@@ -234,8 +235,6 @@
             android:paddingEnd="10dp"
             android:layout_gravity="start"
             android:text="LOGIN"
-            android:layout_marginStart="5dp"
-
             android:gravity="center"
             >
 
