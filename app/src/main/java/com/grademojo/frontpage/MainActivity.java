@@ -1,6 +1,8 @@
 package com.grademojo.frontpage;
 
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -13,7 +15,12 @@ import com.daimajia.androidanimations.library.YoYo;
 
 public class MainActivity extends AppCompatActivity {
 
-    Boolean animation;
+
+
+    private View mainContainer;
+
+
+
 
     private CardView studentCardView, teacherCardView, parentCardView;
 
@@ -24,15 +31,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         studentCardView = (CardView) findViewById(R.id.cardStudent);
         teacherCardView = (CardView) findViewById(R.id.cardTeacher);
         parentCardView = (CardView) findViewById(R.id.cardParent);
+
+        mainContainer = findViewById(R.id.main_container);
 
         studentTextView =(TextView) findViewById(R.id.student_textview);
         teacherTextView =(TextView) findViewById(R.id.teacher_textview);
         parentTextView =(TextView) findViewById(R.id.parent_textview);
 
-        animation = false ;
+
 
 
 
@@ -42,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener studentListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                mainContainer.setBackgroundResource(R.drawable.grage);
 
                 studentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));

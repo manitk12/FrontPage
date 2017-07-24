@@ -24,8 +24,6 @@
         android:layout_height="80dp"
         android:src="@drawable/grage"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:layout_alignTop="@+id/grade_mojo"
         android:layout_alignParentStart="true"
          />
@@ -36,23 +34,23 @@
             android:id="@+id/grade_mojo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GRADE MOJO"
+            android:text="grade mojo"
             android:textSize="30dp"
+            android:textAllCaps="true"
+            android:layout_toEndOf="@+id/grade"
             android:layout_marginBottom="8dp"
+            android:layout_marginStart="15dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="60dp" />
+             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="15dp"
             android:textColor="@color/white"
             android:gravity="start"
-
+            android:layout_toEndOf="@+id/grade"
+            android:layout_marginStart="25dp"
             android:layout_below="@+id/grade_mojo"
             android:text="The Classroom Assistant"
 
@@ -72,8 +70,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
-
         >
 
 
@@ -81,7 +77,6 @@
                 android:id="@+id/icon"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-
                 android:src="@drawable/ic_proged_user_1797c8_18dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="2dp"
@@ -107,15 +102,15 @@
 
         </RelativeLayout>
 
-            <EditText
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:hint="@string/user"
-                android:textSize="16dp"
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="@string/user"
+            android:textSize="16dp"
 
-                android:textColorHint="#b1b0b0"
-                android:background="#00000000"
-                />
+            android:textColorHint="#b1b0b0"
+            android:background="#00000000"
+            />
 
 
 
@@ -197,7 +192,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="Forget Password?"
-
             android:layout_marginTop="15dp"
 
             />
