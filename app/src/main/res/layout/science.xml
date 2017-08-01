@@ -12,89 +12,81 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/blue"
-        android:background="@drawable/xml_white_bg"
-        app:cardElevation="10dp"
-        android:layout_gravity="center_horizontal"
-
-
-
+        app:cardElevation="@dimen/activity_horizontal_card_elevator"
+        app:cardMaxElevation="@dimen/activity_horizontal_card_elevator"
+        app:cardPreventCornerOverlap="false"
         >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="30dp"
-
-        android:background="@color/yellow"
-        android:gravity="center_horizontal"
-
-
-        >
-
-
-        <android.support.v7.widget.CardView
-
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/xml_blue_bg"
-            app:cardElevation="20dp"
-            android:layout_gravity="start"
-            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="30dp"
+            android:background="@color/yellow"
+            android:gravity="center"
+
 
             >
 
-            <Spinner
+
+            <android.support.v7.widget.CardView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/classes"
-                android:padding="5dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
 
-                android:background="@color/blue"
-
-
+                app:cardElevation="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/blue"
 
                 >
 
-            </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/classes"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
 
-        </android.support.v7.widget.CardView>
+
+
+                    >
+
+                </Spinner>
+
+            </android.support.v7.widget.CardView>
 
 
 
-        <android.support.v7.widget.CardView
+            <android.support.v7.widget.CardView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/xml_blue_bg"
-            app:cardElevation="20dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            >
-
-            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/subject"
-
-                android:padding="5dp"
-
-
-                android:background="@color/blue"
-
-
-
+                app:cardElevation="20dp"
+                app:cardBackgroundColor="@color/blue"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 >
 
-            </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/subject"
 
-        </android.support.v7.widget.CardView>
 
 
 
-    </LinearLayout>
+
+                    >
+
+                </Spinner>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
 
 
     </android.support.v7.widget.CardView>
@@ -109,14 +101,10 @@
         >
 
         <TextView
-
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Type"
-
-
 
             />
 
@@ -131,8 +119,6 @@
             >
 
 
-
-
         </Spinner>
 
     </LinearLayout>
@@ -142,8 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-       android:layout_marginEnd="20dp"
-
+        android:layout_marginEnd="20dp"
         android:src="@drawable/ic_mode_edit_black_18dp"
         />
 
@@ -159,21 +144,19 @@
         android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
 
-
-
         >
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:gravity="top"
-        android:hint="Start Typing...."
-        android:textSize="16dp"
-        android:background="#00000000"
-        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="top"
+            android:hint="Start Typing...."
+            android:textSize="16dp"
+            android:background="#00000000"
+            />
 
-</android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
 
 
 

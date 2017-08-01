@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Select Class"
         android:layout_marginTop="25dp"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:textColor="#121212"
         />
 

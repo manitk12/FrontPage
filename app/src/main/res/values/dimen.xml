@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_card_elevator">0dp</dimen>
+
+
+    <dimen name="first_card_elevator">0dp</dimen>
+    <dimen name="second_card_elevator">10dp</dimen>
+    <dimen name="third_card_elevator">0dp</dimen>
+    <dimen name="fourth_card_elevator">10dp</dimen>
+
+</resources>
