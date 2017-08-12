@@ -31,7 +31,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="40dp"
             >
 
@@ -69,7 +68,6 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
                 android:text="sign up"
-
                 android:layout_marginStart="30dp"
                 />
 
@@ -200,7 +198,6 @@
                     android:textColor="#8f8c8c"
                     android:textAllCaps="true"
                     android:layout_gravity="end"
-
                     android:layout_marginTop="15dp"
                     />
 
@@ -208,7 +205,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:background="@color/white"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
@@ -218,6 +214,7 @@
                         android:id="@+id/image_view_facebook"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
+                        android:layout_gravity="center"
                         android:src="@drawable/facebook"
 
 
@@ -228,6 +225,7 @@
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/googlef"
+                        android:layout_gravity="center"
                         android:layout_marginStart="5dp"
                         />
 
@@ -247,9 +245,8 @@
                         android:paddingEnd="5dp"
                         android:layout_margin="5dp"
                         app:cardBackgroundColor="#f4ffffff"
-
-
                         >
+
 
 
                     <ImageView
@@ -276,7 +273,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="30dp"
 
             >
