@@ -54,14 +54,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                mainContainer.setBackgroundResource(R.drawable.grage);
 
                 studentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
+
+
+
+
                 YoYo.with(Techniques.RollIn).duration(1000).playOn(studentCardView);
                 YoYo.with(Techniques.RollOut).duration(1000).playOn(teacherCardView);
                 YoYo.with(Techniques.RollOut).duration(1000).playOn(parentCardView);
+
+
+
+
+
+
 
 
             }
@@ -75,10 +84,16 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener teacherListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                teacherCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
+             //   teacherCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 parentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                teacherCardView.setRadius(1.5f);
+
+
+                YoYo.with(Techniques.RollIn).duration(1000).playOn(teacherCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(studentCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(parentCardView);
+                teacherCardView.setCardBackgroundColor(Color.parseColor("#121212"));
+
 
             }
         };
@@ -95,7 +110,13 @@ public class MainActivity extends AppCompatActivity {
                 parentCardView.setCardBackgroundColor(Color.parseColor("#FF4081"));
                 teacherCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
                 studentCardView.setCardBackgroundColor(Color.parseColor("#ffffff"));
-                parentCardView.setRadius(1.5f);
+
+
+
+                YoYo.with(Techniques.RollIn).duration(1000).playOn(parentCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(teacherCardView);
+                YoYo.with(Techniques.RollOut).duration(1000).playOn(studentCardView);
+
 
             }
         };

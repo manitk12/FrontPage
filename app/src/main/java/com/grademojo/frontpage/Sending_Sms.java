@@ -1,13 +1,9 @@
 package com.grademojo.frontpage;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.Menu;
@@ -17,30 +13,40 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Sendind_Sms extends Activity {
+public class Sending_Sms extends Activity {
 
-    EditText mobileno,message;
-    Button sendsms;
+    EditText mobile_no,message;
+    Button send_sms;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sendind__sms);
 
-        mobileno=(EditText)findViewById(R.id.editText1);
+
+
+
+        mobile_no =(EditText)findViewById(R.id.editText1);
         message=(EditText)findViewById(R.id.editText2);
-        sendsms=(Button)findViewById(R.id.button1);
+        send_sms =(Button)findViewById(R.id.button1);
 
         //Performing action on button click
-        sendsms.setOnClickListener(new OnClickListener() {
+        send_sms.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                String no=mobileno.getText().toString();
-                String msg=message.getText().toString();
+
+
+
+                String no = mobile_no.getText().toString();
+                String msg= message.getText().toString();
+
 
                 //Getting intent and PendingIntent instance
-                Intent intent=new Intent(getApplicationContext(),Sendind_Sms.class);
+                Intent intent=new Intent(getApplicationContext(),Sending_Sms.class);
                 PendingIntent pi=PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
+
+
+
 
                 //Get the SmsManager instance and call the sendTextMessage method to send message
                 SmsManager sms=SmsManager.getDefault();

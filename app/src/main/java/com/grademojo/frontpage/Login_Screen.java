@@ -57,7 +57,6 @@ public class Login_Screen extends AppCompatActivity {
 
 
 
-
                 teacher.height = convertDpToPx(80,SCREEN_DENSITY);
                 teacher.width = convertDpToPx(80, SCREEN_DENSITY);
                 Teacher_Card_View.setLayoutParams(teacher);
@@ -101,6 +100,7 @@ public class Login_Screen extends AppCompatActivity {
                 Teacher_Card_View.setRadius(convertDpToPx(30,SCREEN_DENSITY));
                 Student_Card_View.setRadius(convertDpToPx(40,SCREEN_DENSITY));
                 Parent_Card_View.setRadius(convertDpToPx(30,SCREEN_DENSITY));
+
 
 
 
